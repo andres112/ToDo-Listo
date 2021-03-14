@@ -13,10 +13,10 @@ export default {
     Navbar,
   },
   methods: {
-    ...mapActions(["loadLocalStorage"]),
+    ...mapActions(["loadTasks"]),
   },
   created() {
-    this.loadLocalStorage();
+    this.loadTasks();
   },
 };
 </script>

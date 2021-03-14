@@ -87,7 +87,7 @@ export default {
   computed: {
     blocking() {
       const isDate = this.task?.date; // new operator ?.
-      return this.task.name.trim() === "" && isDate ? true : false;
+      return this.task.name.trim() !== "" && !!isDate ? false : true;
     },
   },
   created() {

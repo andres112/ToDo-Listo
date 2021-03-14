@@ -1,4 +1,5 @@
-# todo_listo
+# ToDo Listo
+### Project implemented with firebase as backend
 
 ## Project setup
 ```

@@ -12,7 +12,6 @@
 // @ is an alias to /src
 import Input from "@/components/Input.vue";
 import TaskList from "@/components/TaskList.vue";
-
 import { mapActions, mapState } from "vuex";
 import { nanoid } from "nanoid"; // import singleton from nano id package
 
@@ -24,7 +23,7 @@ export default {
   },
   data() {
     return {
-      task: { id: "", name: "", category: [], state: "", number: null },
+      task: { id: "", name: "", category: [], priority: "", date: null },
     };
   },
   computed: {
@@ -42,7 +41,8 @@ export default {
       // send data to action in vuex
       this.setTasks(this.task);
       // clear task
-      this.task = { id: "", name: "", category: [], state: "", number: null };
+      this.task = { id: "", name: "", category: [], priority: "", date: null };
+      console.log(this.task);
     },
   },
 };
