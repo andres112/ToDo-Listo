@@ -11,8 +11,15 @@ export default new Vuex.Store({
   state: {
     tasks: [],
     task: EMPTY_TASK,
+    user: null,
   },
   mutations: {
+    //User section
+    setUser(state, payload) {
+      state.user = payload;
+    },
+
+    // Task section
     loadTasks(state, payload) {
       state.tasks = payload;
     },
